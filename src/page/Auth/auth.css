@@ -54,6 +54,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .h1 {
   /* background-color: red; */
   height: 100px;
@@ -64,6 +65,12 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 94px;
+}
+
+.text-gradient{
+  background-image: linear-gradient(to right, red, pink, rgb(66, 64, 64));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .joinToday {

@@ -7,19 +7,23 @@ import { BiLogoApple } from "react-icons/bi";
 import TextNya from "../../components/TextKu";
 import Angker from "../../components/Angker";
 import IniModal from "../../components/Modal";
+import IniModalSignIn from "../../components/Modal/modalSignIn";
+import useToggle from "../../hooks/useToggle";
+import CreateAccount from "../../components/SliceButton/createAccount";
+import SignIn from "../../components/SliceButton/signIn";
 
 function AuthPage() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Rangkap class="dasar">
-      <IniModal isOpen={isOpen} onClose={onClose}></IniModal>
       <Rangkap class="body">
         <Rangkap class="navLogo">
           <Image src="Zocio.png" />
         </Rangkap>
         <Rangkap class="navLogin">
           <Rangkap class="bungkusLog">
-            <Isi class="h1">Happening now</Isi>
+            <Isi class="h1"><span className="text-gradient">Happening now</span></Isi>
             <Isi class="joinToday">Join today.</Isi>
             <Rangkap class="signLog">
               {/* <Isi class="boxMail">
@@ -52,9 +56,11 @@ function AuthPage() {
                 <TextNya class="or">or</TextNya>
                 <Isi class="iniStrip" />
               </Isi>
-              <div onClick={onOpen} class="boxCreateAccount">
+              {/* <Isi onClick={onOpen} class="boxCreateAccount">
+                <IniModal isOpen={isOpen} onClose={onClose}></IniModal>
                 <TextNya class="iniCreateAcc">Create account</TextNya>
-              </div>
+              </Isi> */}
+              <CreateAccount/>
               <Isi class="boxCaption">
                 <TextNya class="caption">
                   By signing up, you agree to the{" "}
@@ -66,9 +72,14 @@ function AuthPage() {
               <Isi class="boxAlready">
                 <TextNya class="already">Already have an account?</TextNya>
               </Isi>
-              <Isi class="boxSignIn">
+              {/* <Isi onClick={onOpen} class="boxSignIn">
+                <IniModalSignIn
+                  isOpenn={isOpen}
+                  onClosee={onClose}
+                ></IniModalSignIn>
                 <TextNya class="iniSignIn">Sign in</TextNya>
-              </Isi>
+              </Isi> */}
+              <SignIn/>
             </Rangkap>
           </Rangkap>
         </Rangkap>
@@ -98,7 +109,6 @@ function AuthPage() {
           <Isi>© 2023 Z Corp.</Isi>
         </Rangkap>
       </Rangkap>
-      
     </Rangkap>
   );
 }

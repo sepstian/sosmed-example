@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 670px;
+  height: 650px;
 }
 
 .iniModalBody {
   background-color: #ffffff;
   width: 700px;
-  height: 518px;
+  height: 700px;
   display: flex;
   /* gap: 20px; */
   flex-direction: column;
@@ -19,5 +19,13 @@
 
 .iniButton{
     background-color: red;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+
+.login{
+  font-size: 50px;
+}
+
+.inputGroup{
+  grid-template-columns: repeat(2, 1fr);
 }
