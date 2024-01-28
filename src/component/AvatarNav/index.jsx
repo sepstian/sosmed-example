@@ -10,7 +10,7 @@ const AvatarNav = () => {
                 <PopoverTrigger>
                     <Box display={'inline-flex'} alignItems={'center'} border={'1px'} borderColor={'blackAlpha.400'} borderRadius={'9999px'} w={'235px'} justifyContent={'space-between'} pr={'8px'} cursor={'pointer'}>
                         <Avatar size='md' src='https://bit.ly/dan-abramov' />
-                        <Text>Fahmi Ardiansyah</Text>
+                        <Text>Septian Kusuma</Text>
                         <AiOutlineDown />
                     </Box>
                 </PopoverTrigger>
@@ -18,7 +18,7 @@ const AvatarNav = () => {
                     <VStack divider={<StackDivider borderColor='gray.200' />} align={'start'}>
                         <Box>
                             <Box display={'inline-flex'} alignItems={'center'}><MdVerified /><Text as={'b'} fontStyle={'italic'}>Verified</Text></Box>
-                            <Text>fahmi@mail.com</Text>
+                            <Text>septi@mail.com</Text>
                         </Box>
                         <Box>
                             <Text>Dashboard</Text>
@@ -34,7 +34,7 @@ const AvatarNav = () => {
                 <VStack divider={<StackDivider borderColor='gray.200' />} align={'start'}>
                     <Box>
                         <Box display={'inline-flex'} alignItems={'center'}><MdVerified /><Text as={'b'} fontStyle={'italic'}>Verified</Text></Box>
-                        <Text>fahmi@mail.com</Text>
+                        <Text>septi@mail.com</Text>
                     </Box>
                     <Box>
                         <Text>Dashboard</Text>

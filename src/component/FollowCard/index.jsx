@@ -10,7 +10,7 @@ const FollowCard = () => {
                 <Heading size={'lg'} color={'white'}>Who to follow</Heading>
                 <Flex bgColor={'white'} h={'60px'} w={'100%'} mt={'10px'} rounded={'lg'} boxShadow={'xl'} p={'10px'} align={'center'}>
                     <Avatar size='sm' src='https://bit.ly/dan-abramov' />
-                    <Box overflow={'hidden'} mr={'10px'} ml={'15px'} w={'150px'} ><Text>@ardiansyah</Text></Box>
+                    <Box overflow={'hidden'} mr={'10px'} ml={'15px'} w={'150px'} ><Text>@Fulan</Text></Box>
                     <IoPersonAdd size={'25px'} />
                 </Flex>
                 <Flex bgColor={'white'} h={'60px'} w={'100%'} mt={'10px'} rounded={'lg'} boxShadow={'xl'} p={'10px'} align={'center'}>
@@ -20,7 +20,7 @@ const FollowCard = () => {
                 </Flex>
                 <Flex bgColor={'white'} h={'60px'} w={'100%'} mt={'10px'} rounded={'lg'} boxShadow={'xl'} p={'10px'} align={'center'}>
                     <Avatar size='sm' src='https://bit.ly/dan-abramov' />
-                    <Box overflow={'hidden'} mr={'10px'} ml={'15px'} w={'150px'} ><Text>@khansa</Text></Box>
+                    <Box overflow={'hidden'} mr={'10px'} ml={'15px'} w={'150px'} ><Text>@Bree</Text></Box>
                     <IoPersonAdd size={'25px'} />
                 </Flex>
                 <Flex mt={'15px'} align={'center'} justify={'center'}>
