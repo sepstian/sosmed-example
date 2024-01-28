@@ -1,0 +1,23 @@
+.iniModalContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 670px;
+}
+
+.iniModalBody {
+  background-color: #ffffff;
+  width: 700px;
+  height: 518px;
+  display: flex;
+  /* gap: 20px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.iniButton{
+    background-color: red;
+    margin-top: 50px;
+}

@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Condensed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Rubik:wght@300;400;600&family=Ubuntu:wght@700&display=swap");
+
+:root{
+  --primary:#F31620;
+  --secondary: #E3424A;
+  --bg-color: #f4f4f5;
+  --second-bg-color: #282B28;
+  --text-color: #282B28;
+  --sec-text-color: #83BCA9;
+}
+
+.dasar {
+  width: 100%;
+  display: block;
+  height: 100vh;
+}
+
+.body {
+  background-color: var(--bg-color);
+  /* flex-direction: column; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.navLogo {
+  /* background-image: url('Zocio.png'); */
+  /* background-size: cover; */
+  width: 70%;
+  height: 100vh;
+  display: block;
+  /* background-color: aqua; */
+  width: 900px;
+  height: 400px;
+}
+
+.navLogin {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(235, 89, 89); */
+}
+
+.bungkusLog {
+  /* background-color: aqua; */
+  width: 95%;
+  height: 95vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.h1 {
+  /* background-color: red; */
+  height: 100px;
+  margin-top: 80px;
+  font-family: "Ubuntu", sans-serif;
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 94px;
+}
+
+.joinToday {
+  /* background-color: red; */
+  height: 50px;
+  margin-top: 60px;
+  font-family: "Ubuntu", sans-serif;
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 45px;
+}
+
+.signLog {
+  /* background-color: red; */
+  height: 55%;
+  margin-top: 30px;
+  font-family: "Ubuntu", sans-serif;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* font-size: 94px; */
+}
+
+.boxMail {
+  /* background-color: rgb(65, 218, 78); */
+  border: 1px solid grey;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.boxMail:hover {
+  background-color: rgb(251, 241, 225);
+  border: 1px solid grey;
+  width: 360px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.profil {
+  /* background-color: red; */
+  background-size: cover;
+  background-image: url("data:image/png;base64,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");
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.namail {
+  /* background-color: blue; */
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.namail1 {
+  /* background-color: red; */
+  /* font-weight: 100; */
+}
+
+.namGoogle{
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+
+.iniSignUpGoogle {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  height: 20px;
+  font-weight: 500;
+}
+
+.iniGmailnya {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: rgb(57, 56, 56);
+}
+
+.namail2 {
+  /* background-color: rgb(102, 36, 233); */
+}
+
+/* ini Revisi */
+/* .gmailLogo {
+  background-size: cover;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAqFBMVEVHcEz7+/v+/v709PX////7+/v09fX4+Pj////8/Pz7+/v////z+PP29vf09PX////+/v7///////////83qlfrQzPsTkFHiPUlpkszf/RAhfX6uwD8wBLW4vyQs/j96N3/+vPh8eR8wJiHrfjylpBhuXftX0rR6Nb608j0qKNwofBKsGWzy/rzn5n0o57uc2/94J78zFb3u7es1rC6z/rHuTCVsC08ooagt3gtAAAAE3RSTlMA08Eb4kVwOqb5kV7jkn8NfnFw9v5R3wAAAVtJREFUOI2dU9lywjAMTIAchgmljU3sJBRycRZoocf//1ltyZ4cpi/dl0jeHWllxY7TxVPgecGT8weCkMQAEgaP6EncwcSShPEAYZ+fDHlZ5BG/P9T1YW8rRnhyYRoXzEeGn0G6XrKlBmNrOJppAVZnmpNftt1gDeSfVbhhwNa3W83Y1hh9aR1eFX/G43N/kjEYyCR/sGcdG4vvWb692jzYnKrgI88znL96RVQrlU3NJWdSgM5FihBv5sKHggSR9gW5FKx1BSGUSHwawQI8ZHl2B8FK4ZgmAjwspMDDKb4obc2nsgIEnrnpzTeltDF8lSbpsb1r2OWdS8Vpp8KiVAWgA+4TesSNFFBOm+bE+U8iqraD47gqJidVQ4NjA1eve4ydS6PgvGw3AfAxL0oOKAvM/fafi4z/YrcrTBx1/9q5vcj54N2QPk3sx+V3JMS3aKgSuUTCjR49zf/jF+G2OgtU1MugAAAAAElFTkSuQmCC");
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+} */
+
+.gmailLogo {
+  /* background-size: cover; */
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAqFBMVEVHcEz7+/v+/v709PX////7+/v09fX4+Pj////8/Pz7+/v////z+PP29vf09PX////+/v7///////////83qlfrQzPsTkFHiPUlpkszf/RAhfX6uwD8wBLW4vyQs/j96N3/+vPh8eR8wJiHrfjylpBhuXftX0rR6Nb608j0qKNwofBKsGWzy/rzn5n0o57uc2/94J78zFb3u7es1rC6z/rHuTCVsC08ooagt3gtAAAAE3RSTlMA08Eb4kVwOqb5kV7jkn8NfnFw9v5R3wAAAVtJREFUOI2dU9lywjAMTIAchgmljU3sJBRycRZoocf//1ltyZ4cpi/dl0jeHWllxY7TxVPgecGT8weCkMQAEgaP6EncwcSShPEAYZ+fDHlZ5BG/P9T1YW8rRnhyYRoXzEeGn0G6XrKlBmNrOJppAVZnmpNftt1gDeSfVbhhwNa3W83Y1hh9aR1eFX/G43N/kjEYyCR/sGcdG4vvWb692jzYnKrgI88znL96RVQrlU3NJWdSgM5FihBv5sKHggSR9gW5FKx1BSGUSHwawQI8ZHl2B8FK4ZgmAjwspMDDKb4obc2nsgIEnrnpzTeltDF8lSbpsb1r2OWdS8Vpp8KiVAWgA+4TesSNFFBOm+bE+U8iqraD47gqJidVQ4NjA1eve4ydS6PgvGw3AfAxL0oOKAvM/fafi4z/YrcrTBx1/9q5vcj54N2QPk3sx+V3JMS3aKgSuUTCjR49zf/jF+G2OgtU1MugAAAAAElFTkSuQmCC");
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.iconMail{
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.boxApple {
+  /* background-color: rgb(65, 218, 78); */
+  border: 1px solid grey;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.boxApple:hover {
+  background-color: rgb(207, 207, 207);
+  border: 1px solid grey;
+  width: 360px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.iconApple {
+  /* background-color: red; */
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.namapple {
+  /* background-color: red; */
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+}
+
+.iniStrip {
+  background-color: rgb(197, 185, 185);
+  height: 1px;
+  width: 190px;
+}
+
+.or {
+  font-size: 18px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12%;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.boxOr {
+  width: 360px;
+  /* height: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 15px;
+}
+
+.boxCreateAccount {
+  background-color: var(--secondary);
+  color: white;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.boxCreateAccount:hover {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.iniCreateAcc {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.boxCaption {
+  width: 360px;
+  height: 50px;
+  display: flex;
+  font-size: 14px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* background-color: coral; */
+  color: grey;
+  margin-top: 5px;
+}
+
+.linkKata{
+  color: rgb(83, 135, 255);
+  cursor: pointer;
+}
+
+.linkKata:hover{
+  color: rgb(83, 135, 255);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.caption {
+  font-family: "Open Sans", sans-serif;
+}
+
+.boxSignIn{
+  color: var(--primary);
+  border: 1px solid grey;
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.boxSignIn:hover{
+  background-color: rgb(251, 241, 225);
+  color: var(--primary);
+  border: 1px solid grey;
+  width: 360px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.boxAlready{
+  width: 380px;
+  height: 30px;
+  display: flex;
+  /* margin-top: 10px; */
+  /* background-color: yellow; */
+  margin-top: 60px;
+}
+
+.already{
+  font-family: "Rubik", sans-serif;
+  /* background-color: coral; */
+  font-size: 20px;
+  font-weight: 900;
+
+}
+
+/* ini bagian footer */
+.body2 {
+  background-color: var(--bg-color);
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: red; */
+  gap: 25px;
+  width: 95%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text2 {
+  justify-content: space-evenly;
+  display: flex;
+  width: auto;
+  gap: 25px;
+  font-size: 16px;
+  /* background-color: aqua; */
+  font-family: "Open Sans", sans-serif;
+}
+
+.linkFooter{
+  color: rgb(43, 43, 44);
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.linkFooter:hover{
+  color: rgb(43, 43, 44);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Ini Modal */
+.iniModalContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 670px;
+}
+
+.iniModalBody{
+  background-color: #F31620;
+  width: 700px;
+  height: 518px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.iniButtonNya{
+  background-color: blue;
+}
